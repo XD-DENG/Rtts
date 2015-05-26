@@ -10,3 +10,8 @@ install.packages("Rtts")
 Convert text into speech (voice file in .mp3 format) with API offered by Google Translate. 
 
 Only English is supported currently.
+
+##Homepage
+You may want to get more information of this package on its homepage:
+
+[http://r-text-2-speech.r-forge.r-project.org/](http://r-text-2-speech.r-forge.r-project.org/)
