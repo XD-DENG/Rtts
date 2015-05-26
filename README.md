@@ -1,2 +1,2 @@
 # Rtts
-My R package "Rtts" (CRAN release 0.2.5)
+This package is already published on CRAN [http://cran.r-project.org/web/packages/Rtts/](http://cran.r-project.org/web/packages/Rtts/)
