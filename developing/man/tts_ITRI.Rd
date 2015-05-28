@@ -45,7 +45,9 @@ http://tts.itri.org.tw/development/web_service_api.php
 Xiaodong Deng
 }
 \note{
-%%  ~~further notes~~
+Please note that using this function may make the text contents you submitted released unpurposely. 
+
+The text contents you submitted and corresponding voice files will be saved on the ITRI TTS server for 24 hours and others can access (as this package uses a default account).
 }
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
