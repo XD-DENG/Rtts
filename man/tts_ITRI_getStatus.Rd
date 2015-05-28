@@ -39,6 +39,6 @@ Xiaodong Deng
 }
 \examples{
 text <- "Hello."
-ID <- tts_ITRI_getID(text)
+ID <- tts_ITRI_getID(text, speed=0, volume=100, speaker="Bruce")
 tts_ITRI_getStatus(ID)
 }

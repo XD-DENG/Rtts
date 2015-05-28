@@ -32,6 +32,7 @@ https://translate.google.com
   Xiaodong Deng
 }
 \examples{
-  # Used default value for destfile argument, so the generated voice file will be saved in the working directory.
+  # Used default value for destfile argument, 
+  # so the generated voice file will be saved in the working directory.
   tts_google("Hello.")
 }

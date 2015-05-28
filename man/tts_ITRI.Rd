@@ -59,6 +59,7 @@ The text contents you submitted and corresponding voice files will be saved on t
 text <- "Hello."
 
 # Using default setting: speed=0, volume=100, speaker="Bruce".
-# Using default value for destfile argument, i.e. save the voice file in the working directory.
+# Using default value for destfile argument, 
+# i.e. save the voice file in the working directory.
 tts_ITRI(text)
 }

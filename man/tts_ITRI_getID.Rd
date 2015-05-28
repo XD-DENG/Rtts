@@ -56,5 +56,5 @@ Xiaodong Deng
 text <- "hello."
 
 # Using default setting: speed=0, volume=100, speaker="Bruce".
-tts_ITRI_getID(text)
+tts_ITRI_getID(text, speed=0, volume=100, speaker="Bruce")
 }
