@@ -8,8 +8,7 @@ tts_ITRI <- function(content,
   #if the speaker argument meet the requirement
   if(!speaker %in% c("Bruce", "Theresa", "Angela", 
                     "MCHEN_Bruce", "MCHEN_Joddess",
-                    "ENG_Bob", "ENG_Alice", "ENG_Tracy",
-                    "TW_LIT_AKoan","TW_SPK_AKoan")){
+                    "ENG_Bob", "ENG_Alice", "ENG_Tracy")){
     cat("The value for 'speaker' argument is invalid.")
     return()
   }
