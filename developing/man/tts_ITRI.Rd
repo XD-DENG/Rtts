@@ -42,5 +42,5 @@ Xiaodong Deng
 \examples{
 text <- "Hello."
 # using default value for destfile argument, i.e. save the voice file in the working directory.
-voice_url <- tts_ITRI(ID)
+tts_ITRI(text)
 }
