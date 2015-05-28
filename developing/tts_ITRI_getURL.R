@@ -1,5 +1,3 @@
-library(RCurl)
-
 tts_ITRI_getURL <- function(voice_ID){
   
   headerFields <- 

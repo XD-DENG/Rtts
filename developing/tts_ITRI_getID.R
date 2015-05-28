@@ -1,5 +1,3 @@
-library(RCurl)
-
 tts_ITRI_getID <- function(content){
   
   headerFields <- 

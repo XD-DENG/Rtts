@@ -1,5 +1,3 @@
-library(RCurl)
-
 tts_ITRI_getStatus <- function(voice_ID){
   
   headerFields <- 

@@ -1,5 +1,3 @@
-library(RCurl)
-
 tts_ITRI <- function(content,
                      destfile=paste(getwd(),"r.wav",sep="/")){
   tmp_id <- tts_ITRI_getID(content)
