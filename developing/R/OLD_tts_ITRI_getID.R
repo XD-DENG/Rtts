@@ -1,33 +1,24 @@
-tts_ITRI_getID <- function(content, speed, volume, speaker){
+tts_ITRI_getID <- function(content){
   
   headerFields <- 
     c(Accept = "text/xml",
       Accept = "multipart/*",
       'Content-Type' = "text/xml; charset=utf-8",
-      SOAPAction = "http://tts.itri.org.tw/TTSService/ConvertText")
+      SOAPAction = "http://tts.itri.org.tw/TTSService/ConvertSimple")
   
-  body_1 <- '<?xml version="1.0" encoding="utf-8"?>
+  body_head <- '<?xml version="1.0" encoding="utf-8"?>
   <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
     <soap:Body>
-      <ConvertText>
+      <ConvertSimple>
       <accountID>test-for-r</accountID>
       <password>test1for1r</password>
       <TTStext>'
-  body_2 <- '</TTStext>
-      <TTSSpeaker>'
-  body_3 <- '</TTSSpeaker>
-      <volume>'
-  body_4 <- '</volume>
-      <speed>'
-  body_5 <- '</speed>
-      <outType>wav</outType>
-      </ConvertText>
+  body_tail <- '</TTStext>
+      </ConvertSimple>
     </soap:Body>
   </soap:Envelope>'
   
-  body <- paste(body_1, content, body_2, speaker, 
-                body_3, volume, body_4, speed, body_5, 
-                sep="")
+  body <- paste(body_head, content, body_tail, sep="")
   
   # we want the actual body of the response from the web server.
   # To get this, we provide function basicTextGatherer() to collect the text.
@@ -39,7 +30,7 @@ tts_ITRI_getID <- function(content, speed, volume, speaker){
               writefunction = reader$update
   )
   voice_ID_raw <- reader$value()
-  voice_ID <- strsplit(strsplit(voice_ID_raw, split="</Result>")[[1]][1], split = '&amp;')[[1]][3]
+  voice_ID <- strsplit(strsplit(strsplit(voice_ID_raw, split="</Result>")[[1]][1], split = 'string\">')[[1]][2], split=";")[[1]][3]
   return(voice_ID)
 }
 
