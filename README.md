@@ -6,12 +6,11 @@ You can install this package by running the command below in R console.
 install.packages("Rtts")
 ```
 
-##Objectiv
-Convert text into speech (voice file in .mp3 format) with API offered by Google Translate. 
+##Objective
+Convert text into speech (voice file in .mp3 format) with API offered by Google Translate (http://translate.google.com) and ITRI TTS (http://tts.itri.org.tw).
 
-Only English is supported currently.
+Two functions are developed based on these two APIs, tts_google() and tts_ITR(). tts_google() only supports English. tts_ITRI() supports English and Chinese (both traditional and simplified), and users can specify speaker, speed and volume.
 
-##Homepage
-You may want to get more information of this package on its homepage:
 
-[http://r-text-2-speech.r-forge.r-project.org/](http://r-text-2-speech.r-forge.r-project.org/)
+##Bug Reporting & Suggestion Offering
+If you find any bugs in this package or have any suggestions, please feel free to contact me by reporting issue on Github or drop me an email at xd_deng@hotmail.com  
