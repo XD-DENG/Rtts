@@ -3,7 +3,7 @@ Type: Package
 Title: Convert Text into Speech
 Depends: RCurl
 Version: 0.3.0
-Date: 2015-05-26
+Date: 2015-05-29
 Author: Xiaodong Deng
 Maintainer: Xiaodong Deng <xd_deng@hotmail.com>
 Description: Convert text into speech (voice file in mp3 or wav format) with APIs offered by Google Translate and ITRI TTS. Two main functions are given corresponding these two APIS, tts_google() and tts_ITRI(). For tts_google(), only English is supported. For tts_ITRI(), English and Chinese (both traditional and simplified) are supported, and user can specify the speaker accent, speed and volume. Both functions require internet connecion.
