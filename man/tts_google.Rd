@@ -5,7 +5,9 @@
 Convert Text into Speech
 }
 \description{
-Convert text into speech (voice files in .mp3 format) using the API offered by Google Translate (https://translate.google.com). Only English is supported currently.
+Convert text into speech (voice files in .mp3 format) using the API offered by Google Translate (https://translate.google.com). Only English is supported for this function.
+
+Internet connection is required.
 }
 \usage{
 tts_google(content = "hello world", destfile = paste(getwd(),"r.mp3",sep="/"))

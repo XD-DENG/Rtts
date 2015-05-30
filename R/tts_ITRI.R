@@ -9,21 +9,21 @@ tts_ITRI <- function(content,
   if(!speaker %in% c("Bruce", "Theresa", "Angela", 
                     "MCHEN_Bruce", "MCHEN_Joddess",
                     "ENG_Bob", "ENG_Alice", "ENG_Tracy")){
-    cat("The value for 'speaker' argument is invalid.")
+    cat("The value for 'speaker' argument is invalid.\n")
     return()
   }
   
   # check-2:
   #if the speed argument meet the requirement
   if(speed > 10 | speed < -10){
-    cat("The value for 'speed' argument is invalid.")
+    cat("The value for 'speed' argument is invalid.\n")
     return()
   }
   
   # check-3:
   #if the volume argument meet the requirement
   if(volume > 100 | volume < 0){
-    cat("The value for 'volumn' argument is invalid.")
+    cat("The value for 'volumn' argument is invalid.\n")
     return()
   }
   
@@ -42,6 +42,6 @@ tts_ITRI <- function(content,
   binary_file <- getURLContent(tmp_url)
   binary_file <- as.vector(binary_file)
   writeBin(binary_file, destfile)
-  cat("The voice file is generated in:",destfile,"\n")
+  cat("The voice file is generated in:",destfile,"\n\n")
   
 }

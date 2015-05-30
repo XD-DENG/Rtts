@@ -21,7 +21,7 @@ tts_ITRI_getURL <- function(voice_ID){
   body <- paste(body_head, voice_ID, body_tail, sep="")
   
   # we want the actual body of the response from the web server.
-  # To get this, we provide function basicTextGatherer() to collect the text.
+  # To get this, basicTextGatherer() is used to collect the text.
   reader =  basicTextGatherer()  
   curlPerform(url = "http://tts.itri.org.tw/TTSService/Soap_1_3.php?wsdl",
               httpheader = headerFields,
