@@ -10,7 +10,7 @@ Convert text into speech (voice files in .mp3 format) using the API offered by G
 Internet connection is required.
 }
 \usage{
-tts_google(content = "hello world", destfile = paste(getwd(),"r.mp3",sep="/"))
+tts_google(content, destfile = paste(getwd(),"r.mp3",sep="/"))
 }
 
 \arguments{
