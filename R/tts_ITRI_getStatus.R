@@ -1,5 +1,12 @@
 tts_ITRI_getStatus <- function(voice_ID){
   
+  #revision for v0.32#####################
+  if(is.null(voice_ID) == TRUE){
+    cat("The voice ID entered is invalid. Please check.")
+    return(NULL)
+  }
+  #revision for v0.32#####################
+  
   headerFields <- 
     c(Accept = "text/xml",
       Accept = "multipart/*",

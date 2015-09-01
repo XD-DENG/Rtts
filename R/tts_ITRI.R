@@ -27,18 +27,35 @@ tts_ITRI <- function(content,
     return()
   }
   
-  
-  tmp_id <- tts_ITRI_getID(content, speed, volume, speaker)
-  
-  
-  # need to insert a function to check if the convert is completed
-  # here we check if the convert is completed. If not, wait for a while and check again
-  while(tts_ITRI_getStatus(tmp_id)!="completed"){
-    Sys.sleep(0.1)
+  # revision for v0.32
+  # use try() function to figure out the "Timed out" issue
+  try(tmp_id <- tts_ITRI_getID(content, speed, volume, speaker), silent = TRUE)
+  # the part below is inserted to help handle "Timed out" issue
+  if(is.null(tmp_id) == TRUE){
+    return(NULL)
   }
   
   
-  tmp_url <- tts_ITRI_getURL(tmp_id)
+  # the part below is further modified in v0.32
+  # need to insert a function to check if the convert is completed
+  # here we check if the convert is completed. If not, wait for a while and check again
+  status <- "good luck"
+  while(status!="completed"){
+    Sys.sleep(0.1)
+    try(status <- tts_ITRI_getStatus(tmp_id), silent = TRUE)
+    if(status == "good luck"){
+      cat("\n The server is responding slowly. Please try again later.")
+      return(NULL)
+    }
+  }
+  
+  # modified for v0.32
+  try(tmp_url <- tts_ITRI_getURL(tmp_id), silent = TRUE)
+  if(("tmp_url" %in% ls()) == FALSE){
+    cat("\n The server is responding slowly. Please try again later.")
+    return(NULL)
+  }
+  
   binary_file <- getURLContent(tmp_url)
   binary_file <- as.vector(binary_file)
   writeBin(binary_file, destfile)

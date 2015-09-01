@@ -1,0 +1,5 @@
+Rtts V0.32 (Release data: 2015-09-01)
+==============
+
+Changes:
+* Some minor changes are made to address the ITRI server responde issue. The ITRI server responds extremely slowly sometimes, and this may cause "Timed out" error. Here I mainly use try() function to control this issue. If the server responds slowly, the "tts_ITRI_**" function family will print reminding instead of returning ERROR message.

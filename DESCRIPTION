@@ -2,8 +2,8 @@ Package: Rtts
 Type: Package
 Title: Convert Text into Speech
 Depends: RCurl
-Version: 0.3.1
-Date: 2015-06-03
+Version: 0.3.2
+Date: 2015-09-01
 Author: Xiaodong Deng
 Maintainer: Xiaodong Deng <xd_deng@hotmail.com>
 Description: Convert text into speech (voice file in 'mp3' or 'wav' format) with APIs offered by Google Translate and ITRI TTS (Text-To-Speech service, Industrial Technology Research Institute, Taiwan. http://tts.itri.org.tw/). Two main functions are given corresponding these two APIs, tts_google() and tts_ITRI(). For tts_google(), only English is supported. For tts_ITRI(), English and Chinese (both traditional and simplified) are supported, and user can specify the speaker accent, speed and volume. Both functions require internet connection.
@@ -11,4 +11,3 @@ URL: http://me.seekingqed.com/
 License: GPL-3
 LazyData: TRUE
 NeedsCompilation: no
-Packaged: 2015-06-03 09:59:01 UTC; xiaodong
