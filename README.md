@@ -1,4 +1,9 @@
 # R package "Rtts"
+
+[![CRAN Status Badge](http://www.r-pkg.org/badges/version/Rtts)](http://cran.r-project.org/web/packages/Rtts)
+[![CRAN Downloads](http://cranlogs.r-pkg.org/badges/Rtts)](http://cran.rstudio.com/web/packages/Rtts/index.html)
+
+
 This package is already published on CRAN [http://cran.r-project.org/web/packages/Rtts/](http://cran.r-project.org/web/packages/Rtts/)
 
 You can install this package by running the command below in R console.
