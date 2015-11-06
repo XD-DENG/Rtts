@@ -5,12 +5,10 @@
 Convert Text into Speech
 }
 \description{
-Convert text into speech (voice files in .mp3 format) using the API offered by Google Translate (https://translate.google.com). Only English is supported for this function.
-
-Internet connection is required.
+Please note that this function is deprecated and requests will be fulfilled with function "tts_ITRI".
 }
 \usage{
-tts_google(content, destfile = paste(getwd(),"r.mp3",sep="/"))
+tts_google(content, destfile = tempfile("Rtts", fileext = ".mp3"))
 }
 
 \arguments{
@@ -26,9 +24,6 @@ tts_google(content, destfile = paste(getwd(),"r.mp3",sep="/"))
 }
 \note{
    [1] This function can only help convert restricted-length text (roughly nchar(text)<=100); [2] Try to use only comma and period for separation.
-}
-\references{
-https://translate.google.com
 }
 \author{
   Xiaodong Deng

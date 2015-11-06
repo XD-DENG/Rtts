@@ -2,7 +2,7 @@ tts_ITRI <- function(content,
                      speed=0,
                      volume=100,
                      speaker="Bruce",
-                     destfile=paste(getwd(),"r.wav",sep="/")){
+                     destfile=tempfile("Rtts", fileext = ".wav")){
   
   # check-1:
   #if the speaker argument meet the requirement
