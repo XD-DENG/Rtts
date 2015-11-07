@@ -12,9 +12,9 @@ install.packages("Rtts")
 ```
 
 ##Objective
-Convert text into speech (voice file in .mp3 format) with API offered by Google Translate (http://translate.google.com) and ITRI TTS (http://tts.itri.org.tw).
+Convert text into speech (voice file in .mp3 format) with API offered by ITRI TTS (http://tts.itri.org.tw).
 
-Two functions are developed based on these two APIs, tts_google() and tts_ITR(). tts_google() only supports English. tts_ITRI() supports English and Chinese (both traditional and simplified), and users can specify speaker, speed and volume.
+One main function is developed based on this API, tts_google() and tts_ITR(). tts_ITRI() supports English and Chinese (both traditional and simplified), and users can specify speaker, speed and volume.
 
 
 ##Bug Reporting & Suggestion Offering

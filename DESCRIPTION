@@ -3,7 +3,7 @@ Type: Package
 Title: Convert Text into Speech
 Depends: RCurl
 Version: 0.3.3
-Date: 2015-11-06
+Date: 2015-11-07
 Author: Xiaodong Deng
 Maintainer: Xiaodong Deng <xd_deng@hotmail.com>
 Description: Convert text into speech (voice file in 'wav' format) with API offered by ITRI TTS (Text-To-Speech service, Industrial Technology Research Institute, Taiwan. http://tts.itri.org.tw/). One main function is given, tts_ITRI(). English and Chinese (both traditional and simplified) are supported, and user can specify the speaker accent, speed and volume. Using this package requires internet connection.
