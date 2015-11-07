@@ -4,6 +4,8 @@ Rtts V0.33 (Release data: 2015-11-07)
 Changes:
 * Function “tts_google” is deprecated in this version.
 
+* The voice files generated will no longer be saved into the working directory. Instead, they will be saved in a temporary folder and the path will be given. Users can also specify the directory they prefer to save the voice files.
+
 
 
 
