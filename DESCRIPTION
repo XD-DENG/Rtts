@@ -4,7 +4,8 @@ Title: Convert Text into Speech
 Depends: RCurl
 Version: 0.3.3
 Date: 2015-11-07
-Author: Xiaodong Deng
+Author: Xiaodong Deng [aut],
+  Oliver Keyes [aut]
 Maintainer: Xiaodong Deng <xd_deng@hotmail.com>
 Description: Convert text into speech (voice file in 'wav' format) using the text to speech API offered by the
              Industrial Technology Research Institute of Taiwan (http://tts.itri.org.tw/). Both English and Chinese (modern and simplified)
