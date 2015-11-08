@@ -6,9 +6,11 @@ Version: 0.3.3
 Date: 2015-11-07
 Author: Xiaodong Deng
 Maintainer: Xiaodong Deng <xd_deng@hotmail.com>
-Description: Convert text into speech (voice file in 'wav' format) with API offered by ITRI TTS (Text-To-Speech service, Industrial Technology Research Institute, Taiwan. http://tts.itri.org.tw/). One main function is given, tts_ITRI(). English and Chinese (both traditional and simplified) are supported, and user can specify the speaker accent, speed and volume. Using this package requires internet connection.
-URL: http://me.seekingqed.com/
+Description: Convert text into speech (voice file in 'wav' format) using the text to speech API offered by the
+             Industrial Technology Research Institute of Taiwan (http://tts.itri.org.tw/). Both English and Chinese (modern and simplified)
+             are supported, and users can specify the speaker's accent, speed and volume.
+URL: https://github.com/XD-DENG/Rtts
+BugReports: https://github.com/XD-DENG/Rtts/issues
 License: GPL-3
 LazyData: TRUE
 NeedsCompilation: no
-Packaged: 2015-11-07 01:19:40 UTC; nus
