@@ -1,6 +1,6 @@
 Package: Rtts
 Type: Package
-Title: Text to Speech in R
+Title: Text to Speech with R
 Depends: RCurl
 Version: 0.3.3
 Date: 2015-11-07
